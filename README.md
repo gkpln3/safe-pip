@@ -42,7 +42,7 @@ alias -s pip3 "safe-pip"
 The original pip could still be used by running:
 
 ```bash
-python3 -m pip3
+python3 -m pip
 ```
 
 ## Requirements
