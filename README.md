@@ -26,9 +26,22 @@ Add the following line to your shell's configuration file (e.g., .bashrc, .zshrc
 alias pip='safe-pip'
 ```
 
-Then, reload your shell configuration:
+Or, use this one-liner.
+### Zsh
 ```bash
-source ~/.bashrc  # or source ~/.zshrc
+echo "alias pip='safe-pip'" >> ~/.zshrc
+source ~/.zshrc
+```
+
+### Bash
+```bash
+echo "alias pip='safe-pip'" >> ~/.bashrc
+source ~/.bashrc
+```
+
+### Fish
+```bash
+alias -s pip "safe-pip"
 ```
 
 ## Requirements
