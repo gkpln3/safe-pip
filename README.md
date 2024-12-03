@@ -20,28 +20,29 @@ safe-pip install package_name
 ## Replacing `pip` with `safe-pip`
 If you want to replace the pip command with safe-pip, you can create an alias or a symbolic link.
 
-Add the following line to your shell's configuration file (e.g., .bashrc, .zshrc):
-
-```bash
-alias pip='safe-pip'
-```
-
-Or, use this one-liner.
+Use this one-liner to add the following line to your shell's configuration file (e.g., .bashrc, .zshrc):
+ 
 ### Zsh
 ```bash
-echo "alias pip='safe-pip'" >> ~/.zshrc
+echo "alias pip3='safe-pip'" >> ~/.zshrc
 source ~/.zshrc
 ```
 
 ### Bash
 ```bash
-echo "alias pip='safe-pip'" >> ~/.bashrc
+echo "alias pip3='safe-pip'" >> ~/.bashrc
 source ~/.bashrc
 ```
 
 ### Fish
 ```bash
-alias -s pip "safe-pip"
+alias -s pip3 "safe-pip"
+```
+
+The original pip could still be used by running:
+
+```bash
+python3 -m pip3
 ```
 
 ## Requirements
