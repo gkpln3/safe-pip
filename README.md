@@ -2,12 +2,16 @@
 
 `safe-pip` is a wrapper around the standard `pip` command that checks the health score of a package from [Snyk Advisor](https://snyk.io/advisor/python/) before installation. It informs you about the package's health and asks for confirmation before proceeding.
 
+### Example
+![Screenshot 2024-12-03 at 22 46 35](https://github.com/user-attachments/assets/ebe0403a-e7bc-4ec1-aa51-77a80fd83f5d)
+
+
 ## Installation
 
 Install `safe-pip` using pip:
 
 ```bash
-pip install safe-pip
+pip3 install safe-pip
 ```
 
 ## Usage
